@@ -11,7 +11,7 @@ else
         if [ "$arch" != "aarch64" ]; then
             echo -e "$arch currently not available.";
         else
-            curl -L "https://raw.githubusercontent.com/kaozaza2/termux-mongo-php-driver/main/mongodb.so" -o "$mongofile"
+            curl -L "https://raw.githubusercontent.com/earningpoints/termux-mongo-php-driver-latest/main/mongodb.so" -o "$mongofile"
             echo "extension=mongodb.so" >> "$PREFIX/lib/php.ini"
             echo -e "Mongo php driver succeasfully installed!"
         fi
